@@ -85,6 +85,33 @@ var lowerCase = [
 
 var numbers = ["0", "1", "2", "3", "4", "5","6","7","8","9"]
 
+// Creat function called genrate password
+
+function generatePassword () {
+  var length = parseInt(
+        prompt('How many characters would you like your password to contain?')
+      );
+    
+  //logic
+  // ask user if they want upper case 
+  // ask user if they want lower case 
+  // ask user if they want a number 
+
+  //modify finalPass
+  allowedCharacters = allowedCharacters+lowerCase
+  allowedCharacters= allowedCharacters +upperCase
+
+  console.log(allowedCharacters)
+  return length
+}
+
+
+// function getPasswordOptions() {
+//   // Variable to store length of password from user input
+//   var length = parseInt(
+//     prompt('How many characters would you like your password to contain?')
+//   );
+//   }
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
