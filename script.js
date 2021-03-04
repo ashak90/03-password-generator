@@ -11,10 +11,10 @@ function generatePassword () {
   
 
 
-  // var length = parseInt(
-  //       prompt('How many characters would you like your password to contain?')
-  //     );
-  // if (length >= 8 || length<=128)
+  var passwordLength = parseInt(
+        prompt('How many characters would you like your password to contain?')
+      );
+  if (length >= 8 || length<=128)
 
   if (confirm("Do you want a upper case letter?")) {
     allowedCharac = allowedCharac + upperCase;
@@ -32,9 +32,19 @@ function generatePassword () {
     allowedCharac = allowedCharac + numbers;
   }
 
+  for (var i=0; i<passwordLength; i++){
+    var randomNumber = Math.floor(Math.random() * allowedCharac.length);
+    password += allowedCharac.substring(randomNumber,randomNumber+1);
+  }
+
+  //loop the number of times the want howManyCharacters
+  //each time use math.random to target a random index in that string
 
 
-  return allowedCharac
+  finalPass = finalPass + randomNumber
+
+
+  return finalPass;
 
  
 
