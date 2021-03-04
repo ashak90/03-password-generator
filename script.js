@@ -91,18 +91,27 @@ function generatePassword () {
   var length = parseInt(
         prompt('How many characters would you like your password to contain?')
       );
-    
-  //logic
+  if (length >= 8 || length<=128)
+
+  var upperCase = confirm ('Do you want any upper case letters?');
+
+  if (upperCase === true)
+
+
+
+
+  return length
+
+   //logic
   // ask user if they want upper case 
   // ask user if they want lower case 
   // ask user if they want a number 
 
   //modify finalPass
-  allowedCharacters = allowedCharacters+lowerCase
-  allowedCharacters= allowedCharacters +upperCase
+  // allowedCharacters = allowedCharacters+lowerCase
+  // allowedCharacters= allowedCharacters +upperCase
 
-  console.log(allowedCharacters)
-  return length
+  // console.log(allowedCharacters)
 }
 
 
