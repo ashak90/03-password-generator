@@ -54,25 +54,6 @@ function generatePassword () {
     return " ";
   }
 
-
-
-
-  // if (confirm("Do you want a upper case letter?")) {
-  //   allowedCharac = allowedCharac + upperCase;
-  // } 
-
-  // if (confirm("Do you want a lower case letter?")) {
-  //   allowedCharac = allowedCharac + lowerCase;
-  // } 
-
-  // if (confirm("Do you want a special character?")) {
-  //   allowedCharac = allowedCharac + specialCharacters;
-  // }
-
-  // if (confirm("Do you want a numbers?")) {
-  //   allowedCharac = allowedCharac + numbers;
-  // }
-
   for (var i=0; i<passwordLength; i++){
     var randomNumber = Math.floor(Math.random() * allowedCharac.length);
     finalPass += allowedCharac[randomNumber];
@@ -80,61 +61,8 @@ function generatePassword () {
 
   return finalPass;
   
-   //loop the number of times the want howManyCharacters
-  //each time use math.random to target a random index in that string
-
-
-  // finalPass = finalPass + randomNumber
-  // console.log(allowedCharac.length)
-
- 
-
-//   var upperCase = confirm ('Do you want any upper case letters?');
-//   alllowedCharac = alllowedCharac + upperCase;
-//   // if (upperCase == true) {
-//   //   finalPass = finalPass + upperCase;
-//   //   // return finalPass 
-//   // } 
-//  console.log (alllowedCharac)
-
-  
-
-  // var lowerCase = confirm ('Do you want any lower case letters?');
-  // var number = confirm ('Do you want any numbers?')
-  // var specialCharacters = confirm ('Do you want any special characters?')
-
-
-
-
-
-  // if (upperCase === true)
-
-  // alllowedCharac = alllowedCharac + upperCase
-
-
-
-
-  // return finalPass 
-
-   //logic
-  // ask user if they want upper case 
-  // ask user if they want lower case 
-  // ask user if they want a number 
-
-  //modify finalPass
-  // allowedCharacters = allowedCharacters+lowerCase
-  // allowedCharacters= allowedCharacters +upperCase
-
-  // console.log(allowedCharacters)
 }
 
-
-// function getPasswordOptions() {
-//   // Variable to store length of password from user input
-//   var length = parseInt(
-//     prompt('How many characters would you like your password to contain?')
-//   );
-//   }
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
