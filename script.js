@@ -26,7 +26,7 @@ function generatePassword () {
     return " ";
   }
 
-  var upper = confirm("Do you want a upper case letter?")
+  var upper = confirm("Do you want an upper case letter?")
 
   if (upper=== true) {
     allowedCharac += upperCase; 
