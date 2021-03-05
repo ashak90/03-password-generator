@@ -12,10 +12,16 @@ function generatePassword () {
 
 
   var passwordLength = prompt('How many characters would you like your password to contain?');
-//   if (passwordLength >= 8 || passwordLength<=128) {
-//     passwordLength == passLength
-//     return passwordLength
-// }
+  if (passwordLength < 8) {
+    alert ("Password length must be at least 8 characters")
+    return " "
+  }
+
+  if (passwordLength > 128) {
+    alert ("Password length must be less than 128 characters")
+    return " "
+  }
+
 
   if (confirm("Do you want a upper case letter?")) {
     allowedCharac = allowedCharac + upperCase;
