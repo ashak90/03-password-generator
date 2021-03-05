@@ -9,10 +9,7 @@ As required by the task and the acceptance criteria, I created a web application
 
 **Final Product**
 
-The following video shows the web application's appearance and functionality for the "Happy Path":
-
-![screenshot](passwordGenerator.png)
-![image]
+![screenshot](passswordGenerator.png)
 
 ## URLs
 
