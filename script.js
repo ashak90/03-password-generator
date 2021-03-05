@@ -22,22 +22,52 @@ function generatePassword () {
     return " "
   }
 
+  var upper = confirm("Do you want a upper case letter?")
 
-  if (confirm("Do you want a upper case letter?")) {
-    allowedCharac = allowedCharac + upperCase;
+  if (upper=== true) {
+    allowedCharac += upperCase; 
+  }
+  
+  var lower = confirm("Do you want a lower case letter?")
+
+  if (lower=== true) {
+    allowedCharac += lowerCase; 
+  }
+  
+  var special = confirm("Do you want any special characters?")
+
+  if (special=== true) {
+    allowedCharac += specialCharacters; 
   } 
 
-  if (confirm("Do you want a lower case letter?")) {
-    allowedCharac = allowedCharac + lowerCase;
+  var num = confirm("Do you want any numbers?")
+
+  if (num=== true) {
+    allowedCharac += numbers; 
   } 
 
-  if (confirm("Do you want a special character?")) {
-    allowedCharac = allowedCharac + specialCharacters;
+  if (upper===false, lower===false, special===false, num===false) {
+    return " ";
   }
 
-  if (confirm("Do you want a numbers?")) {
-    allowedCharac = allowedCharac + numbers;
-  }
+
+
+
+  // if (confirm("Do you want a upper case letter?")) {
+  //   allowedCharac = allowedCharac + upperCase;
+  // } 
+
+  // if (confirm("Do you want a lower case letter?")) {
+  //   allowedCharac = allowedCharac + lowerCase;
+  // } 
+
+  // if (confirm("Do you want a special character?")) {
+  //   allowedCharac = allowedCharac + specialCharacters;
+  // }
+
+  // if (confirm("Do you want a numbers?")) {
+  //   allowedCharac = allowedCharac + numbers;
+  // }
 
   for (var i=0; i<passwordLength; i++){
     var randomNumber = Math.floor(Math.random() * allowedCharac.length);
