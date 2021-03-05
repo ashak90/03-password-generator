@@ -9,7 +9,7 @@ As required by the task and the acceptance criteria, I created a web application
 
 **Final Product**
 
-![screenshot](passswordGenerator.png)
+![screenshot](passwordGenerator.png)
 
 ## URLs
 
