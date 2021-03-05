@@ -12,14 +12,18 @@ function generatePassword () {
 
 
   var passwordLength = prompt('How many characters would you like your password to contain?');
+  if (isNaN(passwordLength)) {
+    alert ("Password must be a number")
+    return " ";
+  }
   if (passwordLength < 8) {
     alert ("Password length must be at least 8 characters")
-    return " "
+    return " ";
   }
 
   if (passwordLength > 128) {
     alert ("Password length must be less than 128 characters")
-    return " "
+    return " ";
   }
 
   var upper = confirm("Do you want a upper case letter?")
