@@ -11,7 +11,8 @@ As required by the task and the acceptance criteria, I created a web application
 
 The following video shows the web application's appearance and functionality for the "Happy Path":
 
-![image](./assets/passwordGenerator.png)
+![screenshot](passwordGenerator.png)
+![image]
 
 ## URLs
 
