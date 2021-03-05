@@ -51,6 +51,7 @@ function generatePassword () {
   } 
 
   if (upper===false, lower===false, special===false, num===false) {
+    alert ("Must choose at least one thing: upper case, lower case, numbers, and special characters")
     return " ";
   }
 
