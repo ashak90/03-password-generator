@@ -55,10 +55,14 @@ function generatePassword () {
     return " ";
   }
 
+  console.log(allowedCharac);
+
   for (var i=0; i<passwordLength; i++){
     var randomNumber = Math.floor(Math.random() * allowedCharac.length);
     finalPass += allowedCharac[randomNumber];
   }
+
+  console.log (finalPass);
 
   return finalPass;
   
